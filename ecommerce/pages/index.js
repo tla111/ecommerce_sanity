@@ -7,6 +7,7 @@ export default function Home() {
     <div className={styles.container}>
       <h1 style={{ color: "blue" }}>Hello World</h1>
       <h2>E-Commerce Website Using Sanity</h2>
+      <h2 style={{ color: "orange" }}>Products:</h2>
     </div>
   )
 }
