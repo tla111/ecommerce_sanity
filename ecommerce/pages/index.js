@@ -12,7 +12,8 @@ export default function Home() {
   ]
 
   return (
-    <div className={styles.container}>
+    // <div className={styles.container}>
+    <>
       <h1 style={{ color: "blue" }}>Hello World</h1>
       <h2>E-Commerce Website Using Sanity</h2>
       <h2 style={{ color: "orange" }}>Products:</h2>
@@ -32,7 +33,8 @@ export default function Home() {
           ))}
         </tr>
       </table>
-      <h1 style={{ color: "dodgerblue" }}>{appleProducts[0].name}</h1>
-    </div >
+      {/* <h1 style={{ color: "dodgerblue" }}>{appleProducts[0].name}</h1> */}
+    </>
+    // </div >
   )
 }
