@@ -17,22 +17,22 @@ export default function Home() {
       <h1 style={{ color: "blue" }}>Hello World</h1>
       <h2>E-Commerce Website Using Sanity</h2>
       <h2 style={{ color: "orange" }}>Products:</h2>
-      <table style={{ border: "1px solid black" }}>
-        <tr style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <td>Product</td>
-          <td>Price</td>
-          <td>Availability</td>
-        </tr>
-        <tr>
+      <div style={{ border: "1px solid black" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <p>Product</p>
+          <p>Price</p>
+          <p>Availability</p>
+        </div>
+        <div>
           {appleProducts.map((product) => (
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-              <td>{product.name}</td>
-              <td>{product.price}</td>
-              <td>{product.availability}</td>
+              <p>{product.name}</p>
+              <p>{product.price}</p>
+              <p>{product.availability}</p>
             </div>
           ))}
-        </tr>
-      </table>
+        </div>
+      </div>
       {/* <h1 style={{ color: "dodgerblue" }}>{appleProducts[0].name}</h1> */}
     </>
     // </div >
