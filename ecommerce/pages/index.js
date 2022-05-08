@@ -13,7 +13,7 @@ const Home = () => {
       </div>
 
       <div className="products-container">
-        {["Product 1", "Product 2"].map((product) => (
+        {["Product 1", "Product 2", "Product 3", "Product 4", "Product 5"].map((product) => (
           product
         ))}
       </div>
