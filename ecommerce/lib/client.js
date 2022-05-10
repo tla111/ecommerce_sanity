@@ -6,5 +6,5 @@ const client = sanityClient({
     dataset: "production",
     apiVersion: "2022-05-10",
     useCdn: true,
-    token: "",
+    token: process.env.NEXT_PUBLIC_SANITY_TOKEN,
 });
