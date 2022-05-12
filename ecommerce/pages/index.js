@@ -15,7 +15,9 @@ const Home = ({ products, bannerData }) => {
 
       <div className="products-container">
         {products?.map((product) => (
-          product.name
+          <div>
+            <h1>{product.name}</h1>
+          </div>
         ))}
       </div>
 
