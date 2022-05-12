@@ -17,6 +17,7 @@ const Home = ({ products, bannerData }) => {
         {products?.map((product) => (
           <div>
             <h1>{product.name}</h1>
+            <h2>${product.price}.00</h2>
           </div>
         ))}
       </div>
