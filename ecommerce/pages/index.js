@@ -18,6 +18,7 @@ const Home = ({ products, bannerData }) => {
           <div>
             <h1>{product.name}</h1>
             <h2>${product.price}.00</h2>
+            <p>{product.details}</p>
           </div>
         ))}
       </div>
