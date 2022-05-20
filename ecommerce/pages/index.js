@@ -17,7 +17,6 @@ const Home = ({ products, bannerData }) => {
         {products?.map((product) => (
           <>
             <Product key={product._id} product={product} />
-            <Product key={product._id} product={product} />
           </>
         ))}
       </div>
