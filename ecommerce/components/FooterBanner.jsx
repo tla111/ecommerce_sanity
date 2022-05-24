@@ -5,7 +5,16 @@ import { urlFor } from '../lib/client';
 
 const FooterBanner = ({ footerBanner }) => {
     return (
-        <div>FooterBanner</div>
+        <div className="footer-banner-container">
+            <div className="banner-desc">
+                <div className="left">
+
+                </div>
+                <div className="right">
+
+                </div>
+            </div>
+        </div>
     )
 }
 
