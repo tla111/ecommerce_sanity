@@ -7,6 +7,9 @@ const Navbar = () => {
         <div className="navbar-container">
             <p >
                 {/* <Link href=""></Link> */}
+                Navbar
+                Navbar
+                Navbar
             </p>
         </div>
     )
