@@ -5,7 +5,7 @@ import { AiOutlineShopping } from 'react-icons/ai';
 const Navbar = () => {
     return (
         <div className="navbar-container">
-            <p >
+            <p style={{ color: "red" }}>
                 {/* <Link href=""></Link> */}
                 Navbar
                 Navbar
