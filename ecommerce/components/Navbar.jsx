@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <div className="navbar-container">
             <p >
-                {/* <Link href=""></Link> */}
+                <Link href=""></Link>
             </p>
         </div>
     )
