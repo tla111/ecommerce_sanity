@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { client, urlFor } from '../../lib/client';
 
 const ProductDetails = ({ products, product }) => {
 
     const { image, name, details, price } = product;
+    const [index, setIndex] = useState(0);
 
     return (
         <div>
@@ -24,6 +25,19 @@ export const getStaticPaths = async () => {
             current
         }
     }`
+
+    const products = await client.fetch(query);
+
+    const paths = products.map((product) => ({
+        params: {
+            slug: product.slug.current
+        }
+    }));
+
+    return {
+        paths,
+        fallback: 'blocking'
+    }
 }
 
 export const getStaticProps = async ({ params: { slug } }) => {
