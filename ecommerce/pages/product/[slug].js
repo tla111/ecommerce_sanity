@@ -15,15 +15,17 @@ const ProductDetails = () => {
     )
 }
 
-export const getStaticProps = async () => {
-    const query = '*[_type == "product"]';
-    const products = await client.fetch(query);
+export const getStaticProps = async ({ params: { slug } }) => {
+    const query = `*[_type == "product" && slug.current == '${slug}'][0]`;
+    const productsQuery = '*[_type == "product"]'
+    const product = await client.fetch(query);
+    const products = await client.fetch([productsQuery]);
 
     const bannerQuery = '*[_type == "banner"]';
     const bannerData = await client.fetch(bannerQuery);
 
     return {
-        props: { products, bannerData }
+        props: { products, product }
     }
 }
 
