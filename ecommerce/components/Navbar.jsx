@@ -21,10 +21,10 @@ const Navbar = () => {
                 <AiOutlineShopping />
                 <span className="cart-item-qty">1</span>
             </button>
-            <button type="button" className="cart-icon" onClick="" style={{ color: "green" }}>
+            {/* <button type="button" className="cart-icon" onClick="" style={{ color: "green" }}>
                 <AiOutlineShopping />
                 <span className="cart-item-qty">1</span>
-            </button>
+            </button> */}
 
         </div>
     )
