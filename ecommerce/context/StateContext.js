@@ -10,6 +10,10 @@ export const StateContext = ({ children }) => {
     const [totalQuantities, setTotalQuantities] = useState();
     const [qty, setQty] = useState(1);
 
+    const onAdd = (product, quantity) => {
+        const checkProductInCart = cartItems.find(() => item._id === product._id);
+    }
+
     const incQty = () => {
         setQty((prevQty) => prevQty + 1);
     }
@@ -21,6 +25,7 @@ export const StateContext = ({ children }) => {
             return prevQty - 1;
         });
     }
+
 
     return (
         <Context.Provider
