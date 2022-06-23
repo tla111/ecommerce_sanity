@@ -9,22 +9,11 @@ const Navbar = () => {
                 <Link href="/">JSM Headphones</Link>
             </p>
 
-            {/* <button type="button" className="cart-icon" onClick="">
+            <button type="button" className="cart-icon" onClick="">
                 <AiOutlineShopping />
                 <span className="cart-item-qty">1</span>
-            </button> */}
-            {/* <button type="button" className="cart-icon" onClick="" style={{ color: "red" }}>
-                <AiOutlineShopping />
-                <span className="cart-item-qty">1</span>
-            </button> */}
-            {/* <button type="button" className="cart-icon" onClick="" style={{ color: "blue" }}>
-                <AiOutlineShopping />
-                <span className="cart-item-qty">1</span>
-            </button> */}
-            {/* <button type="button" className="cart-icon" onClick="" style={{ color: "green" }}>
-                <AiOutlineShopping />
-                <span className="cart-item-qty">1</span>
-            </button> */}
+            </button>
+
 
         </div>
     )
